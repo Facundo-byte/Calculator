@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    background-color: #010030;
+}
+
+#pantalla{
+    background-color: #001d3d;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    color: rgb(211, 211, 211);
+    font-size: 3em;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    font-family: fuente3;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    min-height: 75px;
+    max-height: 135px;
+}
+
+#contenedor{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border: 2px solid #b48a00;
+    width: 35vw;
+    height: 100vh;
+    margin: auto;
+    background-color: #003566;
+    gap: 10px;
+    padding: 30px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    font-family: fuente1;
+}
+
+.boton{
+    background-color: #003566;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: #ffc300;
+    font-size: 20px;
+    font-family: fuente3;
+    transition-duration: 0.10s;
+}
+
+.boton:hover{
+    background-color: #00172c;
+}
+
+.boton:active{
+    border: 1px solid white;
+}
+
+.boton:nth-child(17){
+    background-color: #ffc300;
+    color: black;
+}
+
+@media screen and (max-width: 1200px){
+    #contenedor{
+        width: 45vw;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #contenedor{
+        width: 100vw;
+        height: 100dvh;
+    }
+
+    body{
+        background-color: #ffae00;
+    }
+}
